@@ -1,0 +1,44 @@
+<div class="div-login-general">
+    <div class="div-login-center">
+      <mat-card id="logincard">
+            <img src="/assets/Images/imageLogo.jpg"> <br><br>
+       
+        <mat-card-title class="logintitle">LOGIN<mat-icon aria-hidden="false" aria-label="Example home icon">person</mat-icon>
+        </mat-card-title>
+        <mat-card-subtitle class="loginsubtitle">BeTrip</mat-card-subtitle>
+        <mat-card-content class="contentlogincard">
+          <form [formGroup]="registerForm"  (submit)="submitForm()" class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+              <input type="email" placeholder="Correo"
+              aria-label="Email"
+              [(ngModel)]="login.email" 
+              formControlName="email"
+              matInput>
+            </mat-form-field>
+       
+            <mat-form-field class="example-full-width" appearance="fill">
+              <input type="password" placeholder="Contraseña"
+              aria-label="Password"
+              [(ngModel)]="login.password" 
+              formControlName="password"
+              matInput >
+            </mat-form-field>
+          </form>      
+        </mat-card-content>
+        <table class="actionslogin">
+          <tr>
+            <mat-card-actions>        
+              <button mat-raised-button color="primary" (click)="loginhandler()">Login</button>          
+           </mat-card-actions>
+          </tr>
+          <tr>
+            <a class="registerLink" [routerLink]="'/register-driver'">Register</a> 
+          </tr>
+        </table>
+        
+      
+      </mat-card>
+    </div>
+  </div>
+  
+  

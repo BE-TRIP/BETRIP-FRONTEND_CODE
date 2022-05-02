@@ -1,0 +1,49 @@
+<mat-toolbar class="printoolbar">
+
+  <div class="container">
+    <mat-toolbar-row>
+      <img src="/assets/Images/imageLogo.jpg">
+      <span class="spacer"></span>
+      
+        <a mat-button [routerLink]="'/searchEvent'" >Inicio</a>
+        <a mat-button [routerLink]="'/routes'" >Buscar Transporte</a>
+        <a mat-button [routerLink]="'/routes'">Publicar</a>
+        <a mat-button [routerLink]="'/traveler-profile'">Perfil</a>
+    
+    </mat-toolbar-row>
+  </div>
+</mat-toolbar>
+  
+
+
+<div class="container mt-5">
+    <h2>MI PERFIL </h2>
+
+    <div class="datos-perfil">
+      <div class="row">
+        <div class="col-4">
+          <img src="{{pfp}}" alt="">
+          <span class="name">{{name}}</span>
+        </div>
+        <div class="col-6">
+          <div class="data">
+            <label>EDAD:</label><br>
+            <span>{{age}}</span>
+          </div>
+          <div class="data">
+            <label>DNI:</label><br>
+            <span>{{dni}}</span>
+          </div>
+          <div class="data">
+            <label>EMAIL:</label><br>
+            <span>{{email}}</span>
+          </div>
+          <div class="data">
+            <label>NUMERO CELULAR:</label><br>
+            <span>{{phoneNumber}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</div>

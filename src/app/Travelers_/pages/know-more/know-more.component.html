@@ -1,0 +1,56 @@
+
+<div class="div-knowMore1">
+    <div class="div-knowMore2">
+        <mat-card *ngFor="let data of eventoData" class="cardes" style="text-align: center;">
+            <mat-card-header> 
+                <img mat-card-avatar src="{{data.travelerProfilePhotofUrl}}" class="avatar">
+                <mat-card-title class="avatarText">Evento de viaje </mat-card-title>
+                <mat-card-subtitle>
+                  
+                </mat-card-subtitle>
+            </mat-card-header> 
+           
+                <mat-card-content id="matconten">
+                <img mat-card-img src= {{data.destinyUrl}} class="travelImg" >
+                    <mat-list >
+                    
+                        <mat-divider></mat-divider>
+                             <mat-list-item> <b>ID:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.id}}</mat-list-item>                   
+                        <mat-divider></mat-divider>
+                            <mat-list-item><b> Conductor:&nbsp;&nbsp;&nbsp;&nbsp;</b> {{data.driverid}}</mat-list-item>
+                        <mat-divider></mat-divider>
+                             <mat-list-item><b>Destino:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.destiny}}</mat-list-item> 
+                        <mat-divider></mat-divider>
+                             <mat-list-item><b>Asientos:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.seating}}</mat-list-item>
+                        <mat-divider></mat-divider>
+                             <mat-list-item><b>Punto de salida:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.starting_point}}</mat-list-item>
+                        <mat-divider></mat-divider>
+                             <mat-list-item><b>Fecha salida:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.departure_date}}</mat-list-item>
+                        <mat-divider></mat-divider>
+                             <mat-list-item><b>Costo:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.cost}}</mat-list-item>
+                        <mat-divider></mat-divider>
+                             <mat-list-item><b>Tipo:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.type}}</mat-list-item>
+                        <mat-divider></mat-divider>
+                             <mat-list-item><b>Placa:&nbsp;&nbsp;&nbsp;&nbsp;</b>{{data.plate}}</mat-list-item>
+  
+
+
+                      </mat-list>
+                    
+                </mat-card-content>
+                <mat-card-actions class="actionsKnowmore">   
+                    <table>
+                        <tr>
+                            <td>
+                                <button mat-raised-button color="warn" [routerLink]="'/login'">Cancel</button>          
+                            </td>
+                            <td>
+                                <button mat-raised-button color="primary" [routerLink]="'/'">Unirse</button>          
+                            </td>
+                        </tr>
+                    </table>     
+                   
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

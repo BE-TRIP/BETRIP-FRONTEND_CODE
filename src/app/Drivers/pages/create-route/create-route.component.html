@@ -1,0 +1,76 @@
+<div class="container">
+    <mat-toolbar>
+       <span>Create Route</span>
+       <span class="spacer"></span>
+       <button mat-stroked-button color="primary" [routerLink]="'/tripRoutes'">Go back</button>      
+    </mat-toolbar>
+
+    <mat-card style="margin-top: 10px">
+        <form [formGroup]="createTripRouteForm" (ngSubmit)="submitForm()">
+            <mat-grid-list cols="4" rowHeight="70px">
+
+                <mat-grid-tile [colspan]="1" [rowspan] = "1" >
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Route destination</mat-label>
+                        <input matInput autocomplete="off" type="text"  formControlName="destiny"[(ngModel)]=" tripRouteData.destiny" required >
+                      
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile [colspan]="3" [rowspan] = "5" >
+                     <img src ="assets/Images/insideCity.svg" height="750px" width="750px"/>
+                </mat-grid-tile>
+
+                <mat-grid-tile [colspan]="1" [rowspan] = "1" >
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Starting Point</mat-label>
+                        <input matInput  autocomplete="off" type="text" formControlName="starting_point"[(ngModel)]="tripRouteData.starting_point" required>
+                       
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile [colspan]="1" [rowspan] = "1" >
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Departure Date</mat-label>
+                        <input matInput  autocomplete="off" type="text" formControlName="departure_date" [(ngModel)]="tripRouteData.departure_date" required>
+                        
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile [colspan]="1" [rowspan] = "1" >
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Price x person S/.</mat-label>
+                        <input matInput  autocomplete="off" type="text" formControlName="cost" [(ngModel)]= "tripRouteData.cost" required>
+                       
+                    </mat-form-field>
+                </mat-grid-tile>
+
+                <mat-grid-tile [colspan]="1" [rowspan] = "1" >
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Seats available</mat-label>
+                        <input matInput  autocomplete="off" type="text" formControlName="cost" [(ngModel)]= "tripRouteData.cost" required>
+                       
+                    </mat-form-field>
+                </mat-grid-tile>
+                <!--
+                <mat-grid-tile [colspan]="1" [rowspan] = "1" >
+                    <mat-form-field style="width: 80%;">
+                        <mat-label>Driver availables</mat-label>
+                        <mat-select formControlName="driver">
+                          <mat-option *ngFor="let item of drivers" [value]="item">
+                            {{item}}
+                          </mat-option>
+                        </mat-select>
+                      </mat-form-field> 
+                </mat-grid-tile> 
+                 -->
+                <mat-grid-tile [colspan]="1" [rowspan] = "1" >
+                    <button [disabled]="!createTripRouteForm.valid" mat-raised-button color="primary" [routerLink]=" '/tripRoutes'" (click)="postUser()" >Create</button>
+                </mat-grid-tile>
+
+            </mat-grid-list>
+
+        </form>
+    </mat-card>
+
+  </div>

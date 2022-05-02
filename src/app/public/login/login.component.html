@@ -1,0 +1,46 @@
+<div class="div-login-general">
+  <div class="div-login-center">
+    <mat-card id="logincard">
+    <mat-card-header>
+     
+      <img src="/assets/Images/imageLogo.jpg">
+   
+    </mat-card-header>
+    <br><br><br><br>
+    <mat-card-title>¡ Bienvenido a Betrip !</mat-card-title>
+    <mat-card-subtitle>Elige una opción</mat-card-subtitle>
+    <br><br>
+    <mat-card-content class="contentlogincard">
+        <div class="options_login">
+          <h3><b>Conductor</b></h3>
+          <figure>
+            <img src="/assets/Images/login/driver.jpg">
+          </figure>
+          <div class="content"></div>
+             <p>Únete a nuestro equipo y amplia tu alcanze en el servico de transporte </p>
+             <button mat-raised-button color="primary" [routerLink]="'/login-driver'">Login</button> 
+             <br>
+             <br>
+                 
+        </div>  
+        <br>
+        <br>
+        <div class="options_login2">
+          <h3><b>Viajero</b></h3>
+          <figure>
+            <img src="/assets/Images/login/traveler.jpg">
+          </figure>
+          <div class="content"></div>
+        
+          <p> ¿Necesitas movilidad?. Ven y viaja con nosotros </p>
+          <button mat-raised-button color="primary" [routerLink]="'/login-traveler'">Login</button>          
+          <br>
+          <br>
+        </div>  
+      </mat-card-content>
+      <br><br> 
+      
+    
+    </mat-card>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+<div class="div-register1">
+    <div class="div-register2">
+        <mat-card  class="cardes" style="text-align: center;">
+            <mat-card-header class="headercardregister">
+                <mat-card-title>
+                    <mat-icon>person</mat-icon>
+                    Register Form
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Please fill your information
+                </mat-card-subtitle>
+            </mat-card-header> 
+            <form [formGroup]="registerForm"  (submit)="submitForm()" >
+                <mat-card-content id="matconten">
+                    <table class="formregister">
+                        <tr>
+                            <mat-form-field appereance="fill" class="full-width" >
+                               
+                                <input  type="text" matInput formControlName="name" placeholder="Name" [(ngModel)]="driverData.name" required >
+                                <mat-error *ngIf="name?.errors?.required">
+                                     Name is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                            
+                        </tr>
+                        <tr>
+                            <mat-form-field appereance="fill" class="full-width" >
+                               
+                                <input  type="text" matInput formControlName="last_name" placeholder="Last_name" [(ngModel)]="driverData.last_name" required >
+                                <mat-error *ngIf="last_name?.errors?.required">
+                                     Last Name is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                            
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input type="number" matInput formControlName="age" placeholder="Age" [(ngModel)]="driverData.age" required  >
+                            </mat-form-field>
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input  type="text" matInput formControlName="dni" placeholder="DNI" [(ngModel)]="driverData.dni" required  >
+                                <mat-error *ngIf="dni?.errors?.required">
+                                    DNI must have only<strong>numbers</strong>
+                                </mat-error>
+                            </mat-form-field>
+                           
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input  type="text" matInput formControlName="district" placeholder="District" [(ngModel)]="driverData.district" required  >
+                                <mat-error *ngIf="district?.errors?.required">
+                                    District is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input matInput type="email" matInput formControlName="email"  type="email" placeholder="Email" [(ngModel)]="driverData.email" required >
+                                <mat-error *ngIf="email?.errors?.required">
+                                    Email is <strong>required</strong>
+                                </mat-error>
+                                <mat-error *ngIf="email?.errors?.email && !email?.errors?.required">
+                                    Please enter a valid email address
+                                </mat-error>
+                            </mat-form-field>
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input matInput type="password" placeholder="Password" formControlName="password" [(ngModel)]="driverData.password" required >
+                                <mat-error *ngIf="password?.errors?.required">
+                                    Password  is <strong>required</strong>
+                                </mat-error>
+                                <mat-error *ngIf="password?.errors?.minLenght && !password?.errors?.required">
+                                    Password must be at least <strong>5</strong> characters
+                                </mat-error>
+                            </mat-form-field>
+                           
+                        </tr>
+                    </table>
+                   
+                    
+                </mat-card-content>
+                <mat-card-actions class="actionsregister">   
+                    <table>
+                        <tr>
+                            <td>
+                                <button mat-raised-button color="primary" [routerLink]="'/login'" (click)="saidSomething();">Cancel</button>          
+                            </td>
+                            <td>
+                                <button [disabled]="!registerForm.valid" mat-raised-button color="primary" [routerLink]="'/register-vehicle'" (click)="postUser()">Next</button>          
+                            </td>
+                        </tr>
+                    </table>     
+                   
+            </mat-card-actions>
+            </form>
+        </mat-card>
+    </div>
+</div>
+
+
+

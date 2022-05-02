@@ -1,0 +1,38 @@
+.div-knowMore1{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px;
+    } 
+    
+.div-knowMore2{
+       
+          width:700px;
+          align-items: center;
+    }
+
+.matconten{
+    width: 100%;
+  }
+.actionsKnowmore{
+    align-items: center;
+   margin-left: 100px;
+  }
+  
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+  }
+.avatarText{
+    align-items: center;
+    margin-top: 10px;
+  
+  }
+  .travelImg{
+    width: 500px;
+    background-size: cover; 
+
+  }

@@ -1,0 +1,269 @@
+{
+  "travelers": [
+    {
+      "id": 0,
+      "name": "string",
+      "age": 12,
+      "dni": 0,
+      "email": "string",
+      "password": "string",
+      "phoneNumber": "string",
+      "pfp": "https://image.freepik.com/foto-gratis/primer-plano-hombre-caucasico-impresionado-diciendo-wow-mirando-izquierda-asombrado-revisando-trato-promocion-fondo-blanco-copia-espacio_1258-77230.jpg"
+    },
+    {
+      "name": "GAEE",
+      "age": 12,
+      "dni": "82904012",
+      "email": "qwoidqoh@as",
+      "password": "121212112",
+      "phoneNumber": "0991144192",
+      "id": 1,
+      "pfp": "https://image.freepik.com/foto-gratis/primer-plano-hombre-caucasico-impresionado-diciendo-wow-mirando-izquierda-asombrado-revisando-trato-promocion-fondo-blanco-copia-espacio_1258-77230.jpg"
+    },
+    {
+      "name": "adads",
+      "age": 12,
+      "dni": "12323213",
+      "email": "dadsa@da",
+      "password": "dasdasdadasd",
+      "phoneNumber": "1321321",
+      "id": 2,
+      "apiId": "v1"
+    },
+    {
+      "name": "Diego",
+      "age": 19,
+      "dni": "75559243",
+      "email": "dosoriohorna@gmail.com",
+      "password": "diegoosorio",
+      "phoneNumber": "964570588",
+      "id": 3
+    }
+  ],
+  "Eventos": [
+    {
+      "id": 1,
+      "driver": 1,
+      "destiny": "Churin",
+      "destinyUrl": "/assets/Images/IChurin.png",
+      "seating": 2,
+      "starting_point": "La Molina",
+      "departure_time": "4:00 pm",
+      "departure_date": "27/12/2021",
+      "cost": 90,
+      "type": "Camioneta",
+      "plate": "WRX80",
+      "driverUrl": "/assets/Images/conductor_1.png"
+    },
+    {
+      "id": 2,
+      "driver": 2,
+      "destiny": "Huacachina",
+      "destinyUrl": "/assets/Images/IHuacachina.png",
+      "seating": 4,
+      "starting_point": "San Vicente",
+      "departure_time": "10:00 am",
+      "departure_date": "01/01/2022",
+      "cost": 120,
+      "type": "Furgoneta",
+      "plate": "XYP9X",
+      "driverUrl": "/assets/Images/conductor_2.jpg"
+    },
+    {
+      "id": 3,
+      "driver": 3,
+      "destino": "Matucana",
+      "destinyUrl": "/assets/Images/IMatucana.png",
+      "seating": 3,
+      "starting_point": "Ancón",
+      "departure_time": "12:00 pm",
+      "departure_date": "20/11/2021",
+      "cost": 70,
+      "type": "Minivan",
+      "plate": "T0D3S",
+      "driverUrl": "/assets/Images/conductor_3.jpg"
+    },
+    {
+      "id": 4,
+      "driver": 4,
+      "destiny": "Nazca",
+      "destinyUrl": "/assets/Images/INazca.png",
+      "seating": 4,
+      "starting_point": "San Isidro",
+      "departure_time": "10:00 am",
+      "departure_date": "10/02/2022",
+      "cost": 90,
+      "type": "Minivan",
+      "plate": "SD20D",
+      "driverUrl": "/assets/Images/conductor_4.jpg"
+    },
+    {
+      "id": 5,
+      "driver": 5,
+      "destiny": "Real Felipe",
+      "destinyUrl": "/assets/Images/IRealFelipe.png",
+      "seating": 2,
+      "starting_point": "Churin",
+      "departure_time": "4:00 pm",
+      "departure_date": "27/12/2021",
+      "cost": 200,
+      "type": "Campervam",
+      "plate": "S1M0N",
+      "driverUrl": "/assets/Images/conductor_5.png"
+    },
+    {
+      "destiny": "Pachacamac",
+      "starting_point": "Lima",
+      "departure_date": "2021-11-11",
+      "cost": "50",
+      "id": 6,
+      "seating": 2,
+      "destinyUrl": "#",
+      "departure_time": "00:00 pm",
+      "type": "Camioneta",
+      "plate": "12YPW",
+      "driver": "Matias Perez"
+    }
+  ],
+  "drivers": [
+    {
+      "id": 1,
+      "name": "Marlon Delgado",
+      "last_name": "Delgado",
+      "age": 20,
+      "dni": "172454545",
+      "Pfp": "/assets/Images/conductor_1.png",
+      "district": "La victoria",
+      "email": "Marlon@Delgado",
+      "password": "1111111",
+      "tipe": "van",
+      "model": "N400 Move",
+      "brand": "Toyota",
+      "licence_plate": "BW123",
+      "licence_code": "132313",
+      "number_seats": "8"
+    },
+    {
+      "id": 2,
+      "name": "Kevin Olarte",
+      "last_name": "Olarte",
+      "age": 40,
+      "dni": "222545454",
+      "Pfp": "/assets/Images/conductor_2.jpg",
+      "district": "San Isidro",
+      "email": "Kevin@Olarte",
+      "password": "2222222",
+      "tipe": "van",
+      "model": "N400 Move",
+      "brand": "CHEVROLET",
+      "licence_plate": "ADF23",
+      "licence_code": "138813",
+      "number_seats": "10"
+    },
+    {
+      "id": 3,
+      "name": "Carlos Morote",
+      "last_name": "Morote",
+      "age": 30,
+      "dni": "337789562",
+      "Pfp": "/assets/Images/conductor_3.jpg",
+      "district": "Buenos Aires",
+      "email": "Carlos@Morote",
+      "password": "3333333",
+      "tipe": "van",
+      "model": "H100 Van",
+      "brand": "Dodge",
+      "licence_plate": "BW123",
+      "licence_code": "1377713",
+      "number_seats": "8"
+    },
+    {
+      "id": 4,
+      "name": "Edwin Samaniego",
+      "last_name": "Samaniego",
+      "age": 25,
+      "dni": "441312251",
+      "Pfp": "/assets/Images/conductor_4.jpg",
+      "district": "Ate",
+      "email": "Edwin@Samaniego",
+      "password": "444444",
+      "tipe": "van",
+      "model": "T500-DK",
+      "brand": "RENAULT",
+      "licence_plate": "BYKLS123",
+      "licence_code": "16868313",
+      "number_seats": "10"
+    },
+    {
+      "id": 5,
+      "name": "Mariano Guzmán",
+      "last_name": "Guzmán",
+      "age": 51,
+      "dni": "44623128",
+      "Pfp": "/assets/Images/conductor_5.jpg",
+      "district": "Chorrillos",
+      "email": "Mariano@Guzmán",
+      "password": "555555",
+      "tipe": "van",
+      "model": "N700-TX",
+      "brand": "KIA Sportage",
+      "licence_plate": "BW119SS",
+      "licence_code": "1898913",
+      "number_seats": "6"
+    }
+  ],
+  "conductores": [
+    {
+      "id": 1,
+      "nombre": "Marlon Delgado",
+      "edad": 20,
+      "Pfp": "/assets/Images/conductor_1.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Kevin Olarte",
+      "edad": 40,
+      "Pfp": "/assets/Images/conductor_2.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Carlos Morote",
+      "edad": 30,
+      "Pfp": "/assets/Images/conductor_3.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Edwin Samaniego",
+      "edad": 25,
+      "Pfp": "/assets/Images/conductor_4.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Mariano Guzmán",
+      "edad": 51,
+      "Pfp": "/assets/Images/conductor_5.jpg"
+    }
+  ],
+  "routes": [
+    {
+      "id": 1,
+      "driverId": 1,
+      "destiny": "Churin",
+      "seating": 3,
+      "starting_point": "Ancón",
+      "departure_time": "4:00 pm",
+      "departure_date": "27/12/2021",
+      "cost": 90
+    },
+    {
+      "destiny": "LIMA",
+      "starting_point": "ICA",
+      "departure_date": "21/12/21",
+      "cost": "16",
+      "id": 2,
+      "seating": 2,
+      "departure_time": "00:00 pm",
+      "driver": "Matias Perez"
+    }
+  ]
+}

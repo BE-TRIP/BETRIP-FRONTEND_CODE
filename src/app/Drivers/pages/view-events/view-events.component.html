@@ -1,0 +1,63 @@
+<mat-toolbar class="scrollbar">
+    <img src="/assets/Images/imageLogo.jpg">
+    <div></div>
+    <div class="mat-spacer"></div>
+    <div></div>
+    <ul>
+      <li><a mat-button >Eventos de viaje</a></li>
+      <li><a mat-button [routerLink]="'/tripRoutes'" >Crear Rutas</a></li>
+      <li><a mat-button [routerLink]="'/showMyRoutes'" >Mis rutas</a></li>
+  </ul>
+  </mat-toolbar>
+  
+  <div class= "search">
+    <mat-form-field class="example-full-width">
+    <span matPrefix> </span>
+    <input type="tel" matInput placeholder="Search" name= "search">
+    <button matSuffix mat-button><mat-icon >search</mat-icon></button>
+    </mat-form-field>
+  </div>
+  
+  
+  <div class="div-tripEvent1">
+    <div class="div-tripEvent2">
+        
+            <div *ngFor="let element of eventoData.content;let i=index" class="cardevents">
+             
+            <mat-card class="example-card" >
+                <mat-card-header>
+                  <img mat-card-avatar src="{{element.travelerProfilePhotofUrl}}" class="example-header-image">
+              
+                  <div mat-card-avatar class="example-header-image"></div>
+                  <mat-card-title>{{element.destiny}}</mat-card-title>
+                  <mat-card-subtitle>
+                   juan Perez
+                    </mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="{{element.destinyUrl}}" alt="Photo of a Shiba Inu">
+                <mat-card-content><p>Únete a este viaje expectacular, invita a unos amigos, llenemos el auto y ¡Comenzemos el viaje!</p>
+  
+                </mat-card-content>
+               
+               
+                <mat-card-actions>
+                  <table>
+                    <tr>
+                      <td>
+                        <button  mat-raised-button color="accent" (click)="postulate(element.id,element)">Postular</button>
+                      </td>
+                      <td>
+                        <button mat-raised-button color="primary" [routerLink]="['/knowMore',element.id]">Mas información</button>
+                      </td>
+                    </tr>
+                  </table>
+                  
+                </mat-card-actions>
+            </mat-card>
+        
+            </div>
+       
+    </div>
+  </div>
+    
+  

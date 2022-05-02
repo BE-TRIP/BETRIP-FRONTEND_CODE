@@ -1,0 +1,45 @@
+<mat-toolbar class="printoolbar">
+
+    <div class="container">
+      <mat-toolbar-row>
+        <img src="/assets/Images/imageLogo.jpg">
+        <span class="spacer"></span>
+        
+        <a mat-button [routerLink]="'/tripEvent'">Eventos de Viaje</a>
+        <a mat-button [routerLink]="'/routes'">Rutas</a>
+      
+      </mat-toolbar-row>
+    </div>
+  </mat-toolbar>
+
+
+<div class="container search-routes mt-5">
+    <h1>Search Routes</h1>
+    <div class="row">
+        <div class="col">
+            <div class="form-group">
+                <input type="text" class="form-control" name="filterPost" placeholder="Search..." [(ngModel)]="filterPost">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Start - End</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let post of routeData.content  ">
+                        <td>{{post.id}}</td>
+                        <td>{{post.starting_point}}</td>
+                        <td>{{post.departure_date}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

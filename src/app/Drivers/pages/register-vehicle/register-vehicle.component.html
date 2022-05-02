@@ -1,0 +1,81 @@
+<div class="div-register1">
+    <div class="div-register2">
+        <mat-card  class="cardes" style="text-align: center;">
+            <mat-card-header class="headercardregister">
+                <mat-card-title>
+                    <mat-icon>person</mat-icon>
+                    Register Vehicle
+                </mat-card-title>
+                <mat-card-subtitle>
+                    Please fill your information
+                </mat-card-subtitle>
+            </mat-card-header> 
+            <form [formGroup]="registerForm"  (submit)="submitForm()" >
+                <mat-card-content id="matconten">
+                    <table class="formregister">
+                        <tr>
+                            <mat-form-field appereance="fill" class="full-width" >
+                                          
+                                <input  type="text" matInput formControlName="tipe" placeholder="Tipe" [(ngModel)]="driverData.type" required >
+                                <mat-error *ngIf="tipe?.errors?.required">
+                                    the type of vehicle is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                            
+                        </tr>
+                        <tr>
+
+                            <mat-form-field>
+                            <input type="text" matInput formControlName="brand" placeholder="Brand" [(ngModel)]="driverData.brand" required  >
+                            </mat-form-field>
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input  matInput formControlName="model" placeholder="Model" [(ngModel)]="driverData.model" required  >
+                            </mat-form-field>
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input  matInput formControlName="licence_plate" placeholder="Licence plate" [(ngModel)]="driverData.licence_plate" required  >
+                                <mat-error *ngIf="licence_plate?.errors?.required">
+                                    The licence plate of vehicle is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input matInput formControlName="licence_code" placeholder="Licence code" [(ngModel)]="driverData.licence_code" required  >
+                            </mat-form-field>
+                            <mat-error *ngIf="licence_code?.errors?.required">
+                                The licence code is <strong>required</strong>
+                            </mat-error>
+                        </tr>
+                        <tr>
+                            <mat-form-field>
+                                <input type="number" matInput formControlName="number_seats" placeholder="Number seats" [(ngModel)]="driverData.number_seats" required  >
+                            </mat-form-field>
+                        </tr>
+                       
+                    </table>
+                   
+                    
+                </mat-card-content>
+                <mat-card-actions class="actionsregister">   
+                    <table>
+                        <tr>
+                            <td>
+                                <button mat-raised-button color="primary" [routerLink]="'/login'" (click)="saidSomething();">Cancel</button>          
+                            </td>
+                            <td>
+                                <button [disabled]="!registerForm.valid" mat-raised-button color="primary" [routerLink]="'/tripEvent'" (click)="postUser()">Register</button>          
+                            </td>
+                        </tr>
+                    </table>     
+                   
+            </mat-card-actions>
+            </form>
+        </mat-card>
+    </div>
+</div>
+
+

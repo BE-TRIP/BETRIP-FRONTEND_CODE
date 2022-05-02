@@ -1,0 +1,25 @@
+<mat-toolbar class="printoolbar">
+
+  <div class="container">
+    <mat-toolbar-row>
+      <img src="/assets/Images/imageLogo.jpg">
+      <span class="spacer"></span>
+      
+      <a mat-button [routerLink]="'/tripEvent'">Eventos de Viaje</a>
+      <a mat-button [routerLink]="'/search-Routes'">Buscar Ruta</a>
+    
+    </mat-toolbar-row>
+  </div>
+</mat-toolbar>
+
+
+
+
+
+  <div>
+    <div>
+        <google-map width="100%" height="600" [center]="position">
+            <map-marker [position]="position" [label]="label"></map-marker>
+        </google-map>
+    </div>
+  </div>
